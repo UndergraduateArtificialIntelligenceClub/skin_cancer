@@ -1,5 +1,9 @@
-# Dataset
+# Main files to ignore
 data/
+*.jpg
+*.zip
+*.pth
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
