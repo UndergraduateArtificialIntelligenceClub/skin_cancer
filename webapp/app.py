@@ -20,7 +20,7 @@ def ai_predict(category, index):
     path = Path()/'static/images'/category/f'{index}.jpg'
     img = open_image(path)
 
-    pred_class,pred_idx,outputs = learner.predict(img)  
+    pred_class,pred_idx,outputs = learner.predict(img)
 
     response_json = {
         "predictions": {}
@@ -32,4 +32,4 @@ def ai_predict(category, index):
     return json.dumps(response_json)
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)

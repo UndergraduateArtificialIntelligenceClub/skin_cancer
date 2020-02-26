@@ -19,8 +19,8 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    box-shadow: #00000088 0 0 5px;
 
-    background-color: #0070a1;
     color: whitesmoke;
 }
 
@@ -43,13 +43,9 @@ body {
 }
 
 .sidebar {
-    margin-left: 2em;
-    margin-right: 2em;
-
+    flex-grow: 1;
     padding-left: 1em;
     padding-right: 1em;
-
-    background-color: lightgrey;
 }
 
 .prediction {
@@ -67,6 +63,8 @@ body {
 
 .mole-image {
     width: 40em;
+    box-shadow: #00000044 0 0 8px;
+    border-radius: 3px;
 }
 
 .buttons {
@@ -101,5 +99,16 @@ body {
 }
 
 .footer {
-    margin-left: 1em;
+    margin: 0 1em;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+}
+
+.footer > a, .footer > p {
+    flex-grow: 1;
+}
+
+.footer a {
+    text-align: right;
 }
