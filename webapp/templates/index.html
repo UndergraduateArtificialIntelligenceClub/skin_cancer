@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Skin Cancer Detection</title>
+    
+    <!-- favicon -->
+    <link rel="icon" type="image/ico" href="{{ url_for('static', filename='favicon.ico') }}">
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- css / js -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='jquery-3.4.1.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+
+</head>
+<body>
+    <div class="header">
+        <img class="logo" src="{{ url_for('static', filename='logo.png') }}">
+        <h1 class="title">Are you smarter than an AI?</h1>
+    </div>
+    <div class="page-body">
+        <div class="prediction">
+            <div class="image-div">
+                <img class="mole-image" id="mole-image" src="{{ url_for('static', filename='images/benign/1.jpg') }}">
+            </div>
+            <div class="buttons" id="prediction-buttons">
+                <button onclick="pred(false)" class="choice-button">Benign</button>
+                <button onclick="pred(true)" class="choice-button">Malignant</button>
+            </div>
+            <div class="results" id="prediction-results">
+                <p class="pred-text human-prediction" id="human-pred-text"></p>
+                <p class="pred-text ai-prediction" id="ai-pred-text"></p>
+                <p class="pred-text ground-truth" id="ground-truth-text"></p>
+                <button onclick="next()">Next</button>
+            </div>
+        </div>
+        <div class="sidebar">
+            <h1>Statistics</h1>
+            <hr>
+            <div class="stats">
+                <h2>Human</h2>
+                <p id="human-accuracy"></p>
+                <p id="human-correct"></p>
+                <p id="human-incorrect"></p>
+                <hr>
+                <h2>AI</h2>
+                <p id="ai-accuracy"></p>
+                <p id="ai-correct"></p>
+                <p id="ai-incorrect"></p>
+                <hr>
+                <h2>General</h2>
+                <p id="count"></p>
+            </div>
+            <hr>
+            <button onclick="reset()">Reset</button>
+        </div>
+    </div>
+    <div class="footer">
+        <p>© Will Fenton</p>
+    </div>
+</body>
+</html>

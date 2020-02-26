@@ -1,0 +1,105 @@
+html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    font-family: "Roboto";
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #0070a1;
+    color: whitesmoke;
+}
+
+.page-body {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    
+    flex-grow: 1;
+}
+
+.logo {
+    height: 7em;
+}
+
+.title {
+    margin: auto;
+}
+
+.sidebar {
+    margin-left: 2em;
+    margin-right: 2em;
+
+    padding-left: 1em;
+    padding-right: 1em;
+
+    background-color: lightgrey;
+}
+
+.prediction {
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.image-div {
+
+}
+
+.mole-image {
+    width: 40em;
+}
+
+.buttons {
+    margin-top: 1em;
+    margin-bottom: 1em;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.choice-button {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.pred-text {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.results {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.space {
+    flex-grow: 1;
+}
+
+.footer {
+    margin-left: 1em;
+}
