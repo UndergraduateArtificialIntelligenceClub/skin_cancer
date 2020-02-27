@@ -4,17 +4,28 @@ kaggle dataset link: https://www.kaggle.com/fanconic/skin-cancer-malignant-vs-be
 
 TODO:
 
-- ADD interpret top losses for med students to look at  
+- Look for other medical data sets, hopefully binary
 
 - Make seperate Interactive Notebook: Ideas
-	- uses Test Data set
-	- competition versus model
+	- leaderboard
 	- compares to latest papers?
 	- visualizes what the model looks like
 	- shows the heatmap of what the model focuses on
 
-Model Tuning:
+Model Tuning/Improvement:
 
-- weight decay?
+- Check latest papers, architecture, tricks, data-sets?
 
-- testing data? - probably save for demo
+- fp-16 training
+
+- weight decay parameter increase?
+
+- mess with data augmentation, warp, lighting, rotate
+
+- iterative resizing
+
+- hotdog, not-hotdog ensemble
+
+- what is spatial dropout?
+
+
