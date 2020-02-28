@@ -15,7 +15,6 @@
     <!-- css / js -->
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
-    <script src="{{ url_for('static', filename='jquery-3.4.1.min.js') }}"></script>
     <script src="{{ url_for('static', filename='script.js') }}" defer></script>
 
 </head>
@@ -36,10 +35,10 @@
                 <button onclick="pred(true)" class="choice-button btn btn-primary">Malignant</button>
             </div>
             <div class="results" id="prediction-results">
+                <button onclick="next()" class="btn">Next</button>
                 <p class="pred-text human-prediction" id="human-pred-text"></p>
                 <p class="pred-text ai-prediction" id="ai-pred-text"></p>
                 <p class="pred-text ground-truth" id="ground-truth-text"></p>
-                <button onclick="next()" class="btn">Next</button>
             </div>
         </div>
         <div class="divider-vert"></div>

@@ -6,6 +6,7 @@ html {
 body {
     height: 100%;
     margin: 0;
+    overflow: hidden;
 
     display: flex;
     flex-direction: column;
@@ -57,12 +58,8 @@ body {
     align-items: center;
 }
 
-.image-div {
-
-}
-
 .mole-image {
-    width: 40em;
+    width: 30em;
     box-shadow: #00000044 0 0 8px;
     border-radius: 3px;
 }
@@ -88,14 +85,13 @@ body {
 }
 
 .results {
+    margin-top: 1em;
+    margin-bottom: 1em;
+
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-}
-
-.space {
-    flex-grow: 1;
 }
 
 .footer {
