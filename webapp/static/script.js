@@ -10,11 +10,11 @@ var humanAccuracyText = document.getElementById("human-accuracy");
 var humanCorrectText = document.getElementById("human-correct");
 var humanIncorrectText = document.getElementById("human-incorrect");
 
-var aiAccuracyText = document.getElementById("ai-accuracy"); 
+var aiAccuracyText = document.getElementById("ai-accuracy");
 var aiCorrectText = document.getElementById("ai-correct");
 var aiIncorrectText = document.getElementById("ai-incorrect");
 
-var countText = document.getElementById("count"); 
+var countText = document.getElementById("count");
 
 var moleImage = document.getElementById("mole-image");
 
@@ -66,7 +66,7 @@ Array.prototype.shuffle = function() {
     }
 }
 
-function pred(humanPredMalignant) {    
+function pred(humanPredMalignant) {
     if (malignant && humanPredMalignant) {
         numCorrectHuman += 1;
 
@@ -87,7 +87,7 @@ function pred(humanPredMalignant) {
         humanPredText.innerText = "Human: Predicted Benign (True Negative)";
         humanPredText.style.color = "green";
     }
-    
+
     updateStats();
 
     resultsMode();
@@ -99,7 +99,7 @@ function updateStats() {
     let aiAccuracy = Math.round(10000 * numCorrectAI / numTotal) / 100;
 
     countText.innerText = "Count: " + numTotal.toString();
-    
+
     humanCorrectText.innerText = "Correct: " + numCorrectHuman.toString();
     humanIncorrectText.innerText = "Incorrect: " + (numTotal - numCorrectHuman).toString();
     aiCorrectText.innerText = "Correct: " + numCorrectAI.toString();
@@ -122,7 +122,7 @@ function next() {
     numTotal += 1;
 
     malignant = (Math.random() > 0.5);
-    
+
     let imagePath = "/static/images/";
     if (malignant) {
         groundTruthText.innerText = "Actual: Malignant";
@@ -133,7 +133,7 @@ function next() {
         imagePath += "benign/" + (benignImages[benignIndex]).toString() + ".jpg";
     }
     moleImage.src = imagePath;
-    
+
     if (malignant) {
         malignantIndex = (malignantIndex + 1) % numMalignant;
     }
@@ -211,7 +211,7 @@ function getAIPred() {
         }
         else {
             numCorrectAI += 1;
-    
+
             aiPredText.innerText = "AI: Predicted Benign with " + benignCertainty.toString() + "% certainty (True Negative)";
             aiPredText.style.color = "green";
         }
