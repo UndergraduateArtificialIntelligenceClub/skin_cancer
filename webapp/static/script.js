@@ -176,7 +176,7 @@ function resultsMode() {
 }
 
 function getAIPred() {
-    let api_url = "http://localhost:5000/api/predict/";
+    let api_url = window.location.origin + "/api/predict/";
     if (malignant) {
         api_url += "malignant/" + malignantIndex.toString();
     }
