@@ -28,4 +28,6 @@ Model Tuning/Improvement:
 
 - what is spatial dropout?
 
+- include all validation data for training
+
 
