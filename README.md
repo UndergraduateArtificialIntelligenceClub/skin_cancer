@@ -14,15 +14,10 @@ TODO:
 
 Model Tuning/Improvement:
 
-- Check latest papers, architecture, tricks, data-sets?
 
 - fp-16 training
 
-- weight decay parameter increase?
-
-- mess with data augmentation, warp, lighting, rotate
-
-- iterative resizing
+- weight decay parameter increase, 0.01 - 0.01,0.2? Separate Batch norm param? 
 
 - hotdog, not-hotdog ensemble
 
@@ -30,4 +25,12 @@ Model Tuning/Improvement:
 
 - include all validation data for training
 
+- try out final batchnorm layer
 
+- iterative resizing (done)
+- mess with data augmentation, warp, lighting, rotate (done)
+- Get dropout in there, not sure if default (done, default 0.5)
+
+Maybe: 
+
+- Check latest papers, architecture, tricks, data-sets? (maybe for a sequel project)
