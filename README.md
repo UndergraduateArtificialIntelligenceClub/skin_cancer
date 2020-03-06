@@ -7,6 +7,7 @@ TODO:
 - Look for other medical data sets, hopefully binary
 
 - Make seperate Interactive Notebook: Ideas
+	- show our tops losses, in case doctor shows
 	- leaderboard
 	- compares to latest papers?
 	- visualizes what the model looks like
@@ -17,7 +18,9 @@ Model Tuning/Improvement:
 
 - fp-16 training
 
-- weight decay parameter increase, 0.01 - 0.01,0.2? Separate Batch norm param? 
+- weight decay parameter increase, 0.01 - 0.01,0.2? Separate Batch norm param? a
+
+- slice learning rates, pct-start? 
 
 - hotdog, not-hotdog ensemble
 
