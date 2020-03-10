@@ -20,16 +20,14 @@ Model Tuning/Improvement:
 
 - weight decay parameter increase, 0.01 - 0.01,0.2? Separate Batch norm param? a
 
-- slice learning rates, pct-start? 
-
 - hotdog, not-hotdog ensemble
 
 - what is spatial dropout?
 
 - include all validation data for training
 
-- try out final batchnorm layer
-
+- try out final batchnorm layer(done, unsure)
+- slice learning rates, pct-start?(done, unsure)
 - iterative resizing (done)
 - mess with data augmentation, warp, lighting, rotate (done)
 - Get dropout in there, not sure if default (done, default 0.5)
