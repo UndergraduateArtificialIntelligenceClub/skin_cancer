@@ -26,6 +26,7 @@ fetch("data/predictions.json").then((response) => {
     return response.json();
 }).then((json) => {
     predictions = json;
+    reset();
 })
 
 var numCorrectHuman = 0;
@@ -164,8 +165,6 @@ function reset() {
 
     resetText();
     updateStats();
-
-    while (predictions === null) {};
     
     next();
 }
@@ -262,5 +261,3 @@ function getAIPred() {
     //     }
     // })
 }
-
-reset();
