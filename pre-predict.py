@@ -30,7 +30,7 @@ for path, filename, index in benign_files:
     for i in range(len(outputs)):
         predictions["benign"][index]["predictions"][learner.data.classes[i]] = float(outputs[i])
 
-for path, filename, index in benign_files:
+for path, filename, index in malignant_files:
     img = open_image(path)
     pred_class, pred_idx, outputs = learner.predict(img)
 
