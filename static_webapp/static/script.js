@@ -193,7 +193,7 @@ function getAIPred() {
     }
     else {
         malignantProbability = predictions["benign"][benignIndex]["predictions"]["malignant"];
-        benignProbability = predictions["malignant"][benignIndex]["predictions"]["benign"];
+        benignProbability = predictions["benign"][benignIndex]["predictions"]["benign"];
     }
 
     let aiPredMalignant = (malignantProbability > benignProbability);
