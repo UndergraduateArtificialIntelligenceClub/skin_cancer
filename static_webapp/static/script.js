@@ -185,13 +185,15 @@ function resetText() {
 }
 
 function getAIPred() {
+    let malignantProbability;
+    let benignProbability;
     if (malignant) {
-        let malignantProbability = predictions["malignant"][malignantIndex]["predictions"]["malignant"];
-        let benignProbability = predictions["malignant"][malignantIndex]["predictions"]["benign"];
+        malignantProbability = predictions["malignant"][malignantIndex]["predictions"]["malignant"];
+        benignProbability = predictions["malignant"][malignantIndex]["predictions"]["benign"];
     }
     else {
-        let malignantProbability = predictions["benign"][benignIndex]["predictions"]["malignant"];
-        let benignProbability = predictions["malignant"][benignIndex]["predictions"]["benign"];
+        malignantProbability = predictions["benign"][benignIndex]["predictions"]["malignant"];
+        benignProbability = predictions["malignant"][benignIndex]["predictions"]["benign"];
     }
 
     let aiPredMalignant = (malignantProbability > benignProbability);
