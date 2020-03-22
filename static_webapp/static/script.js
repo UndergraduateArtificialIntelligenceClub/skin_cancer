@@ -74,8 +74,6 @@ Array.prototype.shuffle = function() {
 }
 
 function pred(humanPredMalignant) {
-    while (predictions === null) {};
-
     if (malignant && humanPredMalignant) {
         numCorrectHuman += 1;
 
@@ -166,6 +164,9 @@ function reset() {
 
     resetText();
     updateStats();
+
+    while (predictions === null) {};
+    
     next();
 }
 
