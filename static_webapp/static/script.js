@@ -132,7 +132,7 @@ function next() {
 
     malignant = (Math.random() > 0.5);
 
-    let imagePath = "/static/images/";
+    let imagePath = window.location + "/static/images/";
     if (malignant) {
         groundTruthText.innerText = "Actual: Malignant";
         imagePath += "malignant/" + (malignantImages[malignantIndex]).toString() + ".jpg";
