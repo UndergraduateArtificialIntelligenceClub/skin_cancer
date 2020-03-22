@@ -1,0 +1,110 @@
+html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    font-family: "Roboto";
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-shadow: #00000088 0 0 5px;
+
+    color: whitesmoke;
+}
+
+.page-body {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    flex-grow: 1;
+}
+
+.logo {
+    height: 7em;
+}
+
+.title {
+    margin: auto;
+}
+
+.sidebar {
+    flex-grow: 1;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.prediction {
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.mole-image {
+    width: 30em;
+    box-shadow: #00000044 0 0 8px;
+    border-radius: 3px;
+}
+
+.buttons {
+    margin-top: 1em;
+    margin-bottom: 1em;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.choice-button {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.pred-text {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.results {
+    margin-top: 1em;
+    margin-bottom: 1em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.footer {
+    margin: 0 1em;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+}
+
+.footer > a, .footer > p {
+    flex-grow: 1;
+}
+
+.footer a {
+    text-align: right;
+}
