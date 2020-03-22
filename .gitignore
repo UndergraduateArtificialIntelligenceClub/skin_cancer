@@ -9,6 +9,7 @@ data/
 webapp/static/images
 webapp/*.pkl
 
+!static_webapp/data
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
