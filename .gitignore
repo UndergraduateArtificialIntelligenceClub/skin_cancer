@@ -4,6 +4,8 @@ data/
 *.zip
 *.pth
 
+webapp.tar
+
 .vscode
 
 webapp/static/images
