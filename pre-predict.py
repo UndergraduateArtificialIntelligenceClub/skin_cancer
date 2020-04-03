@@ -6,7 +6,7 @@ import re
 from fastai.vision import *
 
 
-learner = load_learner(Path()/"data", "export.pkl")
+learner = load_learner(Path()/"data", "export.pkl").to_fp16()
 
 images_path = Path()/"webapp/static/images"
 benign_images_path = images_path/"benign"
