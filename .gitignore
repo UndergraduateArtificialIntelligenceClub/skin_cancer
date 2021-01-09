@@ -1,5 +1,5 @@
 # Main files to ignore
-data/
+# data/
 *.jpg
 *.zip
 *.pth
