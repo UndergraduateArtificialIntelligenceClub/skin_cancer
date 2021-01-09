@@ -22,7 +22,7 @@ var moleImage = document.getElementById("mole-image");
 // const apiUrl = window.location.origin + "/api/predict/";
 
 var predictions = null;
-fetch("data/predictions.json").then((response) => {
+fetch("static/predictions.json").then((response) => {
     return response.json();
 }).then((json) => {
     predictions = json;
@@ -56,7 +56,7 @@ var malignant = (Math.random() > 0.5);
 
 // add a shuffle method to the Array prototype
 // https://stackoverflow.com/questions/6274339/how-can-i-shuffle-an-array
-Array.prototype.shuffle = function() {
+Array.prototype.shuffle = function () {
     let counter = this.length;
 
     // While there are elements in the array
@@ -165,7 +165,7 @@ function reset() {
 
     resetText();
     updateStats();
-    
+
     next();
 }
 
