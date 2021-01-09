@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Skin Cancer Detection</title>
+
+    <!-- favicon -->
+    <link rel="icon" type="image/ico" href="static/favicon.ico">
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- css / js -->
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <script src="static/script.js" defer></script>
+
+</head>
+<body>
+    <div class="header bg-primary">
+        <a href="https://uais.dev/">
+            <img class="logo" src="static/logo.png">
+        </a>
+        <h1 class="title">Are you smarter than an AI?</h1>
+    </div>
+    <div class="page-body">
+        <div class="prediction">
+            <div class="image-div">
+                <img class="mole-image" id="mole-image" src="static/images/benign/1.jpg">
+            </div>
+            <div class="buttons" id="prediction-buttons">
+                <button onclick="pred(false)" class="choice-button btn btn-primary">Benign</button>
+                <button onclick="pred(true)" class="choice-button btn btn-primary">Malignant</button>
+            </div>
+            <div class="results" id="prediction-results">
+                <button onclick="next()" class="btn">Next</button>
+                <p class="pred-text human-prediction" id="human-pred-text"></p>
+                <p class="pred-text ai-prediction" id="ai-pred-text"></p>
+                <p class="pred-text ground-truth" id="ground-truth-text"></p>
+            </div>
+        </div>
+        <div class="divider-vert"></div>
+        <div class="sidebar">
+            <h1>Statistics</h1>
+            <div class="divider text-center"></div>
+            <div class="stats">
+                <h2>Human</h2>
+                <p id="human-accuracy"></p>
+                <p id="human-correct"></p>
+                <p id="human-incorrect"></p>
+                <div class="divider text-center"></div>
+                <h2>AI</h2>
+                <p id="ai-accuracy"></p>
+                <p id="ai-correct"></p>
+                <p id="ai-incorrect"></p>
+                <div class="divider text-center"></div>
+                <h2>General</h2>
+                <p id="count"></p>
+            </div>
+            <div class="divider text-center"></div>
+            <button onclick="reset()" class="btn">Reset</button>
+        </div>
+    </div>
+    <div class="footer">
+        <p>© Will Fenton, Giancarlo Pernudi Segura, Peter Friedrich</p>
+        <a href="https://github.com/UndergraduateArtificialIntelligenceClub/skin_cancer/">GitHub</a>
+    </div>
+</body>
+</html>
