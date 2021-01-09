@@ -1,6 +1,6 @@
 # Skin-Cancer Detection Program
 
-## [Demo](https://willfenton.dev/skincancer)
+## [Demo](https://undergraduateartificialintelligenceclub.github.io/skin_cancer/)
 
 kaggle dataset link: https://www.kaggle.com/fanconic/skin-cancer-malignant-vs-benign
 
